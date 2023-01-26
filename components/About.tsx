@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section id='about' className='py-20 bg-gray-50 w-full'>
-      <div className='container mx-auto min-h-[620px] max-w-6xl px-10 sm:px-20 md:px-32 lg:px-16'>
+    <section id='about' className='py-20 w-full'>
+      <div className='container mx-auto'>
         <motion.div
           variants={staggerContainer}
           initial='hidden'

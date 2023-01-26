@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Inter } from '@next/font/google';
-import { About, Container, Navbar } from '@/components';
+import { About, Container, Hero, Navbar } from '@/components';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,6 +16,7 @@ export default function Home() {
       <main className='mx-auto'>
         <Navbar />
         <Container>
+          <Hero />
           <About />
         </Container>
       </main>

@@ -4,6 +4,7 @@
 
 @layer base {
   body {
+    @apply bg-[#1a1a1a] text-gray-200;
   }
   .pretitle {
     @apply font-bold text-base uppercase tracking-[-0.04em] text-accent mb-2;
@@ -11,5 +12,11 @@
 
   .title {
     @apply font-black text-[46px] mb-4 leading-[1.1];
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center;
   }
 }

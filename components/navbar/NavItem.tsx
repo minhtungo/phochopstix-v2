@@ -17,8 +17,8 @@ const NavItem = ({ href, text }: NavItemProps) => {
     <Link
       href={href === '/home' ? '/' : `#${href}`}
       className={`${
-        isActive ? 'font-bold text-gray-200' : 'font-normal'
-      } sm:inline-block transition-all text-base hidden px-2 md:px-3 py-[3px] hover:bg-neutral-700/50 rounded-md`}
+        isActive ? 'font-bold text-gray-200' : 'font-semibold text-gray-300'
+      } hidden rounded-md px-2 py-[3px] text-base transition-all hover:bg-neutral-700/50 sm:inline-block md:px-3`}
     >
       <motion.p className='capitalize' variants={PopUp}>
         {text}
